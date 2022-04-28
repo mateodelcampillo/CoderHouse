@@ -47,20 +47,29 @@ const n2 = parseInt(document.querySelector(".n2").value)
       
 })
 // Se obtiene del localStorage el JSON con los resultados
-
+const  textoHistorial = document.querySelector(".textoHistorial");
 // Funcion que devuelve el historial
 function devolverHistorial() {
-   const  textoHistorial = document.querySelector(".textoHistorial");
-  if(localStorage. length > 0){
-  textoHistorial.innerHTML = ''
-  historial.forEach(element => {
+   
+//   if(localStorage. length > 0){
+//   textoHistorial.innerHTML = ''
+//   historial.forEach(element => {
     
-      textoHistorial.innerHTML += `Numero de operacion: ${element.operacionNum} <br> ${element.desarrollo} <br>` 
-   }
-   )}else{
-      textoHistorial.innerHTML = "<p class=vacio>No hay nada</p>"
-   }
- 
+//       textoHistorial.innerHTML += `Numero de operacion: ${element.operacionNum} <br> ${element.desarrollo} <br>` 
+//    }
+//    )}else{
+//       textoHistorial.innerHTML = "<p class=vacio>No hay nada</p>"
+//    }
+ (localStorage.length > 0)? inner() : textoHistorial.innerHTML = "<p class=vacio>No hay nada</p>"
 }
 // Se aplica un evento al input que devuelve el historial mediante la funcion de arriba
 document.querySelector(".botonHistoriall").addEventListener("click", devolverHistorial)
+
+function inner(){
+   textoHistorial.innerHTML = ''
+   historial.forEach(element => {
+     
+       textoHistorial.innerHTML += `Numero de operacion: ${element.operacionNum} <br> ${element.desarrollo} <br>` 
+    }
+    )
+}
