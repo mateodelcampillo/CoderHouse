@@ -1,0 +1,18 @@
+nav{
+ display: flex;
+ flex-direction: row;
+ 
+}
+.item1 {
+    color: red;
+}
+.item4{
+    color: blue;
+}
+span{
+    background-color: orange;
+    width: 150px;
+    margin-left: 5px;
+    height: 20px;
+    margin-bottom: 5px;
+}

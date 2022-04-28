@@ -1,0 +1,5 @@
+/* Media Queries */
+
+div:not(.papu){
+    color: red;
+}

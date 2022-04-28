@@ -1,0 +1,53 @@
+#footer {
+<<<<<<< HEAD
+  background-color: #493f66;
+  color: white; }
+
+nav {
+  background: radial-gradient(circle, #fff, #bbb); }
+
+#colorTommyBackground {
+  background-color: #3D2875;
+  border-radius: 5px solid; }
+
+body {
+  background: radial-gradient(circle, #fff, #bbb); }
+
+#colorTommy {
+  color: #3D2875; }
+
+#logotommy {
+  max-width: 250px; }
+
+#logotommy1 {
+  max-width: 120px; }
+
+.logoContacto {
+  max-width: 30px; }
+=======
+    background-color: #493f66;
+    color: white; }
+  
+  nav {
+    background: radial-gradient(circle, #fff, #bbb); }
+  
+  #colorTommyBackground {
+    background-color: #3D2875;
+    border-radius: 5px solid; }
+  
+  body {
+    background: radial-gradient(circle, #fff, #bbb); }
+  
+  #colorTommy {
+    color: #3D2875; }
+  
+  #logotommy {
+    max-width: 250px; }
+  
+  #logotommy1 {
+    max-width: 120px; }
+  
+  .logoContacto {
+    max-width: 30px; }
+  
+>>>>>>> e1967f79403ab296462b3fa6a4e380c7cfcbac7b

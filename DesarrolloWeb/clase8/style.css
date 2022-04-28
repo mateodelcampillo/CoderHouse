@@ -1,0 +1,11 @@
+.transicion{
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    transition: width .7s, height .7s, background-color 6s ;
+}
+.transicion:hover{
+    width: 500px;
+    height: 500px;
+    background-color: green;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Pets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="https://kit.fontawesome.com/de66b25961.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+
+ <!---Menu de Inicio-->
+    
+ <header class="encabezado">
+        
+    <div class="menu_container">
+        <span class="logo"><img src="img/logo.png"></span>
+        <span class="inicio"><a href="index.html">Inicio</a></span>
+        <span class="productos"><a href="productos.html">Productos</a></span>
+        <span class="sobre-nosotros"><a href="sobrenosotros.html">Sobre Nosotros</a></span>
+        <span class="Peluqueria"><a href="peluqueria.html">Peluqueria</a></span>
+        <span class="contacto"><a href="contacto.html">Contacto</a></span>
+        
+        <i class="fas fa-search"></i>
+    </div>
+</header>
+
+<!--Formulario de Contacto-->
+<div class="contacto_form">
+    <h1 class="h1pelu" >Saca tu turno para la pelu!<i class="fas fa-dog"></i></h1>
+    <form action="contacto">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="name" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+                </p>
+
+                 <p> 
+                    <label for="email">Email:</label>
+                     <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu email">
+                </p>
+        
+                <p> 
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" name="introducir_telefono" id="telefono" required placeholder="Escribe tu telefono">
+                </p>
+                <p>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha">
+
+                </p>
+                <p>
+                    <label for="hora">Horario (entre las 9hs-21hs)</label>
+                    <input type="time" id="time">
+                    
+                </p>
+                <p>Seleccione el tipo de baño:</p>
+
+                <div>
+                    <label for="solobaño">Solo Baño:</label>
+                    <input type="checkbox" id="baño" name="baño">
+               
+                </div>
+
+                <div>
+                    <label for="bañoycorte">Baño y Corte:</label>
+                    <input type="checkbox" id="bañoycorte" name="bañoycorte">
+                    
+                </div>
+
+                 <p> 
+                     <label for="mensaje">Raza de su perro y observaciones:</label>
+                    <textarea name="introducir_mensaje" id="mensaje" required placeholder="Ej: Bulldog Frances , piel sensible."></textarea>
+                </p>
+                <h2 class="h2pelu">Se le enviara un mensaje con el pedido de su turno y el precio!</h2>
+             <button type="submit" name="enviar_form" id="enviar">Enviar!</button>
+             <img class="peluimg" src="https://userscontent2.emaze.com/images/a64c52fb-498c-4bdb-8008-991071b96535/3ccda01afd9d32eeff9e687c332c60c2.PNG" >
+            </form>
+           
+            </div>
+            
+  <!--Pie de Pagina-->
+  <footer>
+    <HR>
+    <h2>"Tommy Pets" , Todos los derechos reservados</h2>  
+</footer>
+
+</body>

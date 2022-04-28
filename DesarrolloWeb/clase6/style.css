@@ -1,0 +1,16 @@
+body{
+    background-color: yellow;
+}
+div{
+    
+    height: 150px;
+    background-color: black;
+    margin: 5px;
+}
+
+.grid{
+    display: grid;
+    background-color: green;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}

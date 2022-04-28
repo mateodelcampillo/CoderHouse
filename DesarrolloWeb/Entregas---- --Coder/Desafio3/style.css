@@ -1,0 +1,246 @@
+*{
+    color: #3d2875;
+}
+body{
+    display: flex;
+    
+    background: radial-gradient(circle, #fff, #bbb);
+    
+}
+.grid_area{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "main main aside"
+    "footer footer footer";
+    grid-template-rows: repeat(autofill, 1fr);
+    height: 90vh;
+    
+    
+}
+           /*///Nav///*/
+.head_container{
+    display: flex;
+    grid-area: header;
+    flex-wrap: wrap;
+    
+}
+.logotommy{
+    width: 275px;
+    margin: 0%;
+    padding: 0%;
+}
+.menu_container{
+    display: flex;
+    justify-content: space-around;
+    grid-area: header;
+    
+    font-size: 7vh;
+    font-family: 'Dongle', sans-serif;
+
+    
+    align-items: center;
+    border-bottom: #3d2875 solid 3px;
+}
+  /*///Aside1///*/
+
+.aside1{
+    display: flex;
+    
+    background: #3d2875;
+    border-radius: 10px;
+   height: 50vh;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+    
+}
+.textodelivery{
+    display: flex;
+    color: #fff;
+    width: 300px;
+    font-family: 'Varela Round', sans-serif;
+    align-items: center;
+    margin-left: 9px;
+}
+.deliveryimg{
+    
+    width: 300px;
+    height: 300px;
+    
+}
+/*///Aside2///*/
+.aside2{
+    display: flex;
+    
+    background: #3d2875;
+    border-radius: 10px;
+   height: 50vh;
+    flex-wrap: nowrap;
+    margin: 5px;
+}
+.aside2img{
+    display: flex;
+    width: 300px;
+    height: 370px;
+    margin: 0;
+}
+.textoaside2{
+    display: flex;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    align-items: center;
+}
+/*///Main///*/
+.productos_container{
+    
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    font-family: 'Concert One', cursive;
+    margin-top: 5px;
+}
+.img1{
+    width: 300px;
+    height: 450px;
+}
+.img2{
+    width: 300px;
+    height: 450px;
+}
+    /*///Footer///*/
+.footer_container{
+    display: flex;
+    grid-area: footer;
+    justify-content: space-between;
+    font-size: 1.7vh;
+    height: 8vh;
+    border-top: solid #3d2875 3px;
+    font-family: 'Varela Round', sans-serif;
+}
+.redesociales{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    
+}
+
+
+.redes{
+    display: flex;
+    
+    justify-content: space-between;
+    
+    
+    
+}
+
+/*///Responsive para Mobil///*/
+@media only screen and (max-width: 500px) {
+    .grid_area{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+        grid-template-rows: repeat(autofill, 1fr);
+        height: 90vh;}
+        /*///Menu Responsive///*/
+        .menu_container {
+        display: flex;
+        grid-area: header;
+        width: 15px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+        font-size: 40px;
+        padding-left: 30px;
+        
+    }
+    .logotommy{
+        width: 250px;
+        padding-left: 45px;
+
+    }
+        /*///Main, contenido principal Responsive///*/
+
+    .productos_container{
+        display: flex;
+        grid-area: main;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 20px;
+        margin-top: 20px;
+        align-items: center;
+        height: 37vh;
+
+    }
+    .img1{
+        
+        width: 150px;
+        height: 200px;
+       
+    }
+    .img2{
+        width: 150px;
+        height: 200px;
+    }
+    .puppy{
+        font-size: 15px;
+        padding-bottom: 170%;
+    }
+    .adult{
+        font-size: 15px;
+        padding-bottom: 170%;
+    }
+        /*///Aside Responsive///*/
+
+    .aside1{
+        display: inline-block;
+        width: 320px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+        font-size: 12px;
+        grid-area: aside;
+    }
+    .aside2{
+        display: flex;
+        width: 320px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: none;
+        font-size: 12px;
+        grid-area: aside;
+    }
+    .deliveryimg{
+        width: 200px;
+        height: 200px;
+    }
+    .aside2img{
+        width: 800px;
+        height: 190px;
+    }
+    .textoaside2{
+     height: 100px;
+    }
+        /*///Footer Responsive///*/
+
+    .footer_container{
+        display: flex;
+        width: 320px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: none;
+        font-size: 8px;
+        grid-area: footer;
+    }
+}
+    

@@ -1,0 +1,41 @@
+// LogoMenu
+#logotommy{
+    width: 300px;
+}
+// Color de Background
+body{
+    background: radial-gradient(circle, #fff, #bbb); 
+    
+}
+nav{
+    background: radial-gradient(circle, #fff, #bbb); 
+}
+
+
+// Formulario
+.contacto_form{  
+    width: 460px; 
+    margin: 80px ;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fff; 
+    padding-left: 30px; 
+    margin-left: 33%;
+  }
+// Importe Responsive
+  @import "_formResponsive.scss";
+  
+// Seccion Sobre Nosotros
+ 
+.imgSobreNosotros{
+    width: 680px;
+    
+  }
+  .imgSobreNosotros2{
+      width: 320px;
+  }
+// Boton de Submit
+.button-bar{
+    width: 50%;
+  }  

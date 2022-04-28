@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Pets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="https://kit.fontawesome.com/de66b25961.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+
+ <!---Menu de Inicio-->
+    
+ <header class="encabezado">
+        
+    <div class="menu_container">
+        <span class="logo"><img src="img/logo.png"></span>
+        <span class="inicio"><a href="index.html">Inicio</a></span>
+        <span class="productos"><a href="productos.html">Productos</a></span>
+        <span class="sobre-nosotros"><a href="sobrenosotros.html">Sobre Nosotros</a></span>
+        <span class="Peluqueria"><a href="peluqueria.html">Peluqueria</a></span>
+        <span class="contacto"><a href="contacto.html">Contacto</a></span>
+        
+        <i class="fas fa-search"></i>
+    </div>
+</header>
+
+<!--Formulario de Contacto-->
+<div class="contacto_form">
+    <h1>Contactanos por cualquier Consulta!<i class="fas fa-dog"></i></h1>
+    <h2>Le responderemos a la brevedad :)</h2>
+        <form action="contacto">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="name" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+                </p>
+
+                 <p> 
+                    <label for="email">Email:</label>
+                     <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu email">
+                </p>
+        
+                <p> 
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" name="introducir_telefono" id="telefono" required placeholder="Escribe tu telefono">
+                </p>
+        
+                 <p> 
+                     <label for="mensaje">Mensaje:</label>
+                    <textarea name="introducir_mensaje" id="mensaje" required placeholder="introduzca su duda aqui!"></textarea>
+                </p>
+             <button type="submit" name="enviar_form" id="enviar">Enviar!</button>
+             
+       
+
+            </form>
+            </div>
+  <!--Pie de Pagina-->
+  <footer>
+    <HR>
+    <h2>"Tommy Pets" , Todos los derechos reservados</h2>  
+</footer>
+
+</body>
