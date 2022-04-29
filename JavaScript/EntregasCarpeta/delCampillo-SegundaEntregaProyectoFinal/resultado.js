@@ -1,6 +1,7 @@
 // Array almacenador de resultados
 arrayResultado = []
 
+
 historial = JSON.parse(localStorage.getItem("arrayResult")) 
 // Variable que almacen el tipo de operacion a realizar
 let operacion = ""
@@ -14,6 +15,7 @@ document.querySelector(".division").addEventListener("click", ()=> operacion = "
 document.querySelector(".reset").addEventListener("click", ()=> {
     resultado = 0
     document.querySelector(".resultado").innerHTML = resultado
+    localStorage.removeItem("arrayResult")
    })
    // Evento onclick con funcion para resolver la operacion
 document.querySelector(".igual").addEventListener("click", ()=> {
@@ -27,7 +29,7 @@ const n2 = parseInt(document.querySelector(".n2").value)
         resultado =  n1 - n2
      }
      else if(operacion == "*"){
-        resultado =  n1 * parseInt(document.querySelector(".n2").value)
+        resultado =  n1 * n2
      }
      else if(operacion == "/"){
         resultado =  n1 / n2
@@ -35,10 +37,11 @@ const n2 = parseInt(document.querySelector(".n2").value)
    //   Objeto con el resultado y el nro de operacion dentro
      resultObjeto = {
         operacionNum: arrayResultado.length + 1,
-        desarrollo: n1 +` `+ operacion +` `+ n2 + ` =` + resultado
+        desarrollo: n1 +` `+ operacion +` `+ n2 + ` =` + resultado 
       }
       // Push de el objeto al arrayResultado declarado al inicio
       arrayResultado.push(resultObjeto)
+      console.log(arrayResultado)
       // innerHTML para mostrar el resultado en pantalla
      document.querySelector(".resultado").innerHTML = resultado
       // Se añade arrayResultado al localStorage en formato JSON
@@ -49,7 +52,8 @@ const n2 = parseInt(document.querySelector(".n2").value)
 // Se obtiene del localStorage el JSON con los resultados
 const  textoHistorial = document.querySelector(".textoHistorial");
 // Funcion que devuelve el historial
-function devolverHistorial() {
+historialVacio = ["<p class=vacio>No hay historial!, realice una operacion</p>"]
+function devolverHistorial(respuesta2) {
    
 //   if(localStorage. length > 0){
 //   textoHistorial.innerHTML = ''
@@ -60,10 +64,10 @@ function devolverHistorial() {
 //    )}else{
 //       textoHistorial.innerHTML = "<p class=vacio>No hay nada</p>"
 //    }
- (localStorage.length > 0)? inner() : textoHistorial.innerHTML = "<p class=vacio>No hay nada</p>"
+ (localStorage.length > 0)? inner() : textoHistorial.innerHTML = respuesta2
 }
 // Se aplica un evento al input que devuelve el historial mediante la funcion de arriba
-document.querySelector(".botonHistoriall").addEventListener("click", devolverHistorial)
+document.querySelector(".botonHistoriall").addEventListener("click", ()=>devolverHistorial(...historialVacio))
 
 function inner(){
    textoHistorial.innerHTML = ''
