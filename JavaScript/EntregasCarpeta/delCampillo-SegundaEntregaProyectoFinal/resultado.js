@@ -72,8 +72,8 @@ document.querySelector(".botonHistoriall").addEventListener("click", ()=>devolve
 function inner(){
    textoHistorial.innerHTML = ''
    historial.forEach(element => {
-     
-       textoHistorial.innerHTML += `Numero de operacion: ${element.operacionNum} <br> ${element.desarrollo} <br>` 
+     const {operacionNum, desarrollo} = element
+       textoHistorial.innerHTML += `Numero de operacion: ${operacionNum} <br> ${desarrollo} <br>` 
     }
     )
 }
