@@ -1,4 +1,4 @@
-const moeda
+const moneda
 function calcular(){
     
 }
