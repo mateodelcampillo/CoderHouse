@@ -8,7 +8,7 @@ const formCaja = document.querySelector(".caja")
 const inputNombre = document.querySelector(".nusquedaPorNombre")
 const inputId = document.querySelector(".busquedaPorId")
  const escucharInput = ()=>{
-     inputId.addEventListener(("input") ()=>{
+     inputId.addEventListener(("input"),()=>{
          inputNombre.value = "";
      })
     }       
