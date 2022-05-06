@@ -3,7 +3,7 @@ arrayResultado = []
 
 
 historial = JSON.parse(localStorage.getItem("arrayResult")) 
-// Variable que almacen el tipo de operacion a realizar
+// Variable que almacena el tipo de operacion a realizar
 let operacion = ""
 // Evento onclick para determinar que operacion se va a ejecutar
 document.querySelector(".suma").addEventListener("click", ()=> operacion = "+")
