@@ -23,8 +23,8 @@ nav {
 
 @media screen and (max-width: 980px) {
   .contacto_form {
-    margin: 15px;
-    width: 350px;
+    margin: 22px;
+    width: 348px;
   }
   .contact-text {
     width: 40px;
@@ -117,7 +117,29 @@ h2 {
   color: #000000;
 }
 
-.textSobreNosotros {
-  color: #ab4493;
+@media screen and (max-width: 440px) and (min-width: 340px) {
+  #logotommy {
+    width: auto;
+    padding-left: 9px;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 440px) {
+  #logotommy {
+    width: auto;
+    padding-left: 9px;
+  }
+}
+
+.imgSobreNosotros {
+  width: 680px;
+}
+
+.imgSobreNosotros2 {
+  width: 320px;
+}
+
+.button-bar {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
